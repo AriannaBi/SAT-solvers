@@ -1,0 +1,3 @@
+cloth color
+skirt red
+shirt orange
