@@ -65,8 +65,8 @@ def solve(input_data):
         print(cloth, color)
         s.add(And(clothDic[cloth], colorsDic[color]))
 
-    for constraint in s.assertions():
-        # print(constraint)
+    # for constraint in s.assertions():
+    #     # print(constraint)
 
     if s.check() == sat:
         print("Sat")
