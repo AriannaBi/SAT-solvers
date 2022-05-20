@@ -66,12 +66,14 @@ def solve(input_data):
         s.add(And(clothDic[cloth], colorsDic[color]))
 
     for constraint in s.assertions():
-        print(constraint)
+        # print(constraint)
 
     if s.check() == sat:
         print("Sat")
+        return True
     else:
         print('Unsat')
+        return False
 
 
 if __name__ == '__main__':
@@ -80,4 +82,5 @@ if __name__ == '__main__':
         exit()
 
     input_data = pd.read_csv(sys.argv[1], delimiter=' ')
+    # print(input_data)
     solve(input_data)
