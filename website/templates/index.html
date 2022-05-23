@@ -14,6 +14,7 @@
 <body>
 
 <div class="container">
+    <h1 class="title">• Outfit Adviser •</h1>
     <div class="box-container">
         <div class="box">
             <div class="cloth-container">
@@ -160,40 +161,45 @@
 
         </div>
         <div class="box">
-            <p>Flip Flops</p>
-            <div id="flipFlops" class="colors-container">
-                <div data-color="white" class="color white" onClick="toggleCloth(this)"></div>
-                <div data-color="black" class="color black" onClick="toggleCloth(this)"></div>
-                <div data-color="blue" class="color blue" onClick="toggleCloth(this)"></div>
-                <div data-color="pink" class="color pink" onClick="toggleCloth(this)"></div>
-                <div data-color="brown" class="color brown" onClick="toggleCloth(this)"></div>
-                <div data-color="green" class="color green" onClick="toggleCloth(this)"></div>
-                <div data-color="yellow" class="color yellow" onClick="toggleCloth(this)"></div>
-                <div data-color="red" class="color red" onClick="toggleCloth(this)"></div>
-                <div data-color="orange" class="color orange" onClick="toggleCloth(this)"></div>
+            <div class="cloth-container">
+                <img src="/static/img/flipFlops.png" alt="FlipFlops" class="cloth-image">
+                <p>Flip Flops</p>
+                <div id="flipFlops" class="colors-container">
+                    <div data-color="white" class="color white" onClick="toggleCloth(this)"></div>
+                    <div data-color="black" class="color black" onClick="toggleCloth(this)"></div>
+                    <div data-color="blue" class="color blue" onClick="toggleCloth(this)"></div>
+                    <div data-color="pink" class="color pink" onClick="toggleCloth(this)"></div>
+                    <div data-color="brown" class="color brown" onClick="toggleCloth(this)"></div>
+                    <div data-color="green" class="color green" onClick="toggleCloth(this)"></div>
+                    <div data-color="yellow" class="color yellow" onClick="toggleCloth(this)"></div>
+                    <div data-color="red" class="color red" onClick="toggleCloth(this)"></div>
+                    <div data-color="orange" class="color orange" onClick="toggleCloth(this)"></div>
+                </div>
             </div>
         </div>
+
     </div>
 </div>
 
 <div class="container">
     <form action="/" method="post">
-        <button onClick="sendOutfit()" type="button" class="btn btn-primary">Can I wear this outfit?</button>
+        <button onClick="sendOutfit()" type="button" class="btn btn-primary solve-btn">Can I wear this outfit?</button>
     </form>
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Result</h5>
-      </div>
-      <div class="modal-body">
-        <p id="resultText"></p>
-      </div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Result</h5>
+            </div>
+            <div class="modal-body">
+                <p id="resultText"></p>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <script>
@@ -210,11 +216,11 @@
             })
         }).then(response => response.json())
             .then(data => {
-            console.log(data)
-            document.getElementById('resultText').innerHTML = data
-            let myModal = new bootstrap.Modal(document.getElementById('myModal'), {});
-            myModal.show();
-        });
+                console.log(data)
+                document.getElementById('resultText').innerHTML = data
+                let myModal = new bootstrap.Modal(document.getElementById('myModal'), {});
+                myModal.show();
+            });
     }
 
     function isPresent(pair) {

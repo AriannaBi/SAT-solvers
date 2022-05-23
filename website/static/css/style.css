@@ -5,6 +5,14 @@
     align-items: center;
 }
 
+.title {
+    margin: 80px 0;
+}
+
+.solve-btn {
+    margin: 80px 0;
+}
+
 .box-container {
     margin: 20px 0;
     display: flex;
@@ -29,6 +37,10 @@
 .fa-glasses {
     font-size: 5em;
     margin-bottom: 60px;
+}
+
+.cloth-image {
+    width: 150px;
 }
 
 .colors-container {
