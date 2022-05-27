@@ -1,6 +1,15 @@
+import inspect
+import os
+import sys
+
 from flask import Flask, render_template, request, jsonify
-from solver import solve
 import pandas as pd
+
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(0, parentdir)
+
+from solver import solve
 
 app = Flask(__name__)
 
