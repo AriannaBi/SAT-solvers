@@ -1,0 +1,10 @@
+Test cases:
+
+Cloths:
+1. white shirt, red trousers, black shoes => satisfiable
+2. White pullover, red sunglasses, white jacket => unsatisfiable
+
+Colors:
+1. White shirt, red trousers, black flip-flops => satisfiable
+2. White shirt, red trousers, orange flip-flops => unsatisfiable
+
