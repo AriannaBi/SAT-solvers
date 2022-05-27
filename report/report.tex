@@ -55,6 +55,7 @@
   [README.md]
   [input.txt]
   [requirements.txt]
+  [report]
 ]
 \end{forest}
 \end{center}
@@ -93,17 +94,28 @@ The SAT solver reads an input file which contains couple of clothes and colors, 
     
 \end{center}
 
-From the web application the clothes and colors are chosen through the interface showed in picture \ref{boat1}. Here it's possible to select a color for each cloth. It's not mandatory to select every cloth, you can chose the matches that you prefer the most.
+From the web application the clothes and colors are chosen through the interface showed in picture \ref{interface}. Here it's possible to select a color for each cloth. It's not mandatory to select every cloth, you can chose the matches that you prefer the most.
 
 \begin{figure}
   \includegraphics[width=\linewidth]{1-interface.png}
   \includegraphics[width=\linewidth]{2-interface.png}
-  \caption{A boat.}
-  \label{boat1}
+  \caption{Interface where you can decide how to wear}
+  \label{interface}
 \end{figure}
 
+Once you select the outfit, you can click on "Can I wear this outfit?" and a message appears saying if your outfit satisfies the constraints as in picture \ref{is-ok}, or not as in picture \ref{not-ok}.
 
+\begin{figure}
+  \includegraphics[width=\linewidth]{is-ok.jpg}
+  \caption{Message saying your outfit satisfies the constrains.}
+  \label{is-ok}
+\end{figure}
 
+\begin{figure}
+  \includegraphics[width=\linewidth]{not-ok.jpg}
+  \caption{Message saying your outfit doesn't satisfies the constrains.}
+  \label{not-ok}
+\end{figure}
 
 \section{Design and Implementation}
 We decided to implement the constraints as couples of clothes and colors since it's a simple and optimal solution. We chose these sets:
