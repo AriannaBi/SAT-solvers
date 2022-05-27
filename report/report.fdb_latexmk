@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1653682516 "/Users/elenafranchini/Documents/GitHub/6 semester/SAT-solvers/report/report.tex" "/Users/elenafranchini/Documents/GitHub/6 semester/SAT-solvers/report/report.pdf" "report" 1653682560
+["pdflatex"] 1653682516 "/Users/elenafranchini/Documents/GitHub/6 semester/SAT-solvers/report/report.tex" "/Users/elenafranchini/Documents/GitHub/6 semester/SAT-solvers/report/report.pdf" "report" 1653682568
   "/Users/elenafranchini/Documents/GitHub/6 semester/SAT-solvers/report/report.aux" 1653682519 2380 ee02ac7cf7d2e0026846ac878eb11e5e ""
   "/Users/elenafranchini/Documents/GitHub/6 semester/SAT-solvers/report/report.tex" 1653682559 5886 0c8b8ae68c974ce99d976f0c080703e6 ""
-  "/dev/null" 1653682518 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "/dev/null" 1653682566 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -178,9 +178,9 @@
   "report.out" 1653682519 367 786de931fd8959d3cac209ab2e0e21b9 "pdflatex"
   "report.tex" 1653682559 5886 0c8b8ae68c974ce99d976f0c080703e6 ""
   (generated)
-  "/Users/elenafranchini/Documents/GitHub/6 semester/SAT-solvers/report/report.pdf"
   "/Users/elenafranchini/Documents/GitHub/6 semester/SAT-solvers/report/report.log"
   "report.out"
+  "report.aux"
+  "/Users/elenafranchini/Documents/GitHub/6 semester/SAT-solvers/report/report.pdf"
   "report.log"
   "report.pdf"
-  "report.aux"
