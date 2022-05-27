@@ -56,6 +56,7 @@
   [input.txt]
   [requirements.txt]
   [report]
+  [test\_cases.txt]
 ]
 \end{forest}
 \end{center}
@@ -80,7 +81,7 @@ To run the application on the browser:
 \begin{center}
 	\texttt{python3 website/main.py}\\
 \end{center}
-To see the application, go to: http://localhost:0.0.0.0:3000
+To see the application, go to: http://127.0.0.1:3000.
 
 
 \section{Instructions}
@@ -163,7 +164,10 @@ $\neg$(brown $\wedge$ black) \\[0.2cm]
 \end{center}
 
 We wrote the entire code for the Solver in Python, precisely in file Solver.py. To implement it we used z3-solver library, and pandas to read the input file. 
+\newpage
+\section{Problems encountered}
+At the beginning we had some problems implementing the solver because it was a new concept that we didn't know. After some searches on Google, we found out the library z3-solver and we smoothly implemented it. 
 
-
+To process the input data with the constraints we used an AND gate instead of an OR, in order to satisfy every constrain.
 
 \end{document}
